@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Praxida — KI Assistenz für Praxis</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Praxida</h1>
+      <p>Die KI-basierte Assistenz für Ihre Praxis — Dokumentation, Organisation & Zusammenfassungen.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="features">
+      <div class="card">
+        <h3>Effiziente Dokumentation</h3>
+        <p>Sprach- oder textbasiert: strukturierte Behandlungsberichte (SOAP etc.).</p>
+      </div>
+      <div class="card">
+        <h3>Automatisierte Abläufe</h3>
+        <p>Terminverwaltung, Erinnerungen und Zusammenfassungen in einem Tool.</p>
+      </div>
+      <div class="card">
+        <h3>DSGVO & Hosting DE</h3>
+        <p>Empfohlen: Hoster in der EU / Deutschland. Keine Speicherung sensibler Daten ohne Zustimmung.</p>
+      </div>
+    </section>
+
+    <section class="chat">
+      <h2>Therapeuten-KI-Chat</h2>
+      <div id="chatbox" class="chatbox"></div>
+      <div class="row">
+        <input id="chatInput" placeholder="Frage an die KI..." />
+        <button id="sendBtn">Senden</button>
+      </div>
+    </section>
+
+    <section class="summary">
+      <h2>Sitzungs-Zusammenfassung</h2>
+      <textarea id="summaryInput" rows="8" placeholder="Protokoll / Notizen hier einfügen..."></textarea>
+      <div class="row">
+        <button id="summarizeBtn">Zusammenfassen</button>
+        <div id="summaryResult" class="summaryResult"></div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>30 Tage kostenlos testen</h2>
+      <form id="leadForm" class="leadForm">
+        <input id="leadName" placeholder="Ihr Name" required />
+        <input id="leadEmail" type="email" placeholder="Ihre E-Mail" required />
+        <button type="submit">Testzugang anfordern</button>
+      </form>
+      <div id="leadMsg"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">© Praxida — KI Assistenz</div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
