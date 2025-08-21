@@ -43,7 +43,7 @@ app.post('/ask', async (req, res) => {
   try {
     const { prompt } = req.body;
     if (!prompt) return res.status(400).json({ error: 'No prompt provided.' });
-    const reply = await callOpenAI([{ role: 'user', content: prompt }], process.env.OPENAI_MODEL || 'gpt-4');
+    const reply = await callOpenAI([{ role: 'user', content: prompt }], process.env.OPENAI_MODEL || 'gpt-4o-mini');
     res.json({ reply });
   } catch (err) {
     console.error(err);
